@@ -22,7 +22,7 @@ export class UserTasksComponent implements OnInit{
     console.log(this.activatedRoute);
     const subscription = this.activatedRoute.paramMap.subscribe({
       next: paramMap =>{
-        this.userName = this.usersService.users.find((u) => u.id === paramMap.get('userId')?.name || ''
+        this.userName = this.usersService.users.find((u) => u.id === paramMap.get('userId')?.name || '')
       },
     });
 
